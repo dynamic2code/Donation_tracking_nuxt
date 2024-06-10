@@ -3,11 +3,11 @@
       <!-- Vertical Navigation Bar -->
       <nav class="w-1/5 bg-gray-800 text-white p-4">
         <ul class="space-y-4">
-          <li><router-link to="/installation" class="block py-2 px-4 rounded hover:bg-gray-700">Installation</router-link></li>
+          <li><router-link to="/" class="block py-2 px-4 rounded hover:bg-gray-700">Home</router-link></li>
           <li><router-link to="/mainApp" class="block py-2 px-4 rounded hover:bg-gray-700">Main App</router-link></li>
           <li><router-link to="/djangoDocumentation" class="block py-2 px-4 rounded hover:bg-gray-700">Django Documentation</router-link></li>
           <li><router-link to="/nuxtDocumentation" class="block py-2 px-4 rounded hover:bg-gray-700">Nuxt Documentation</router-link></li>
-          <li><router-link to="/systemDiagrams" class="block py-2 px-4 rounded hover:bg-gray-700">System Diagrams</router-link></li>
+          <li><router-link to="/systemDiagrams" class="block py-2 px-4 rounded hover:bg-gray-700">System Diagrams and Design</router-link></li>
         </ul>
       </nav>
   
@@ -19,7 +19,7 @@
           <p class="text-lg mb-4">
             I'm excited to share a new open-source project I'm working on: a <strong>Donation Tracking System</strong> designed to help organizations manage donations efficiently and transparently. This project aims to make a positive impact, and I'm inviting you to join me on this journey! 🚀
           </p>
-  
+
           <h2 class="text-2xl font-semibold mt-6 mb-4">Project Overview</h2>
           <ul class="list-disc list-inside mb-4">
             <li>Allow organizations to log and track donations.</li>
@@ -149,14 +149,13 @@
         </div>
       </div>
     </div>
-  </template>
+</template>
   
-  <script>
+<script setup>
 
-  </script>
+</script>
   
-  <style>
-  /* Custom styles (if needed) */
-  </style>
-  
+<style scoped>
+
+</style> 
   
