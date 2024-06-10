@@ -32,7 +32,7 @@
           <p class="text-lg mb-4">Here’s a glimpse into our project roadmap and key milestones:</p>
   
           <div class="mb-6">
-            <h3 class="text-xl font-bold mb-2">1. Project Initialization (Month 1-2)</h3>
+            <h3 class="text-xl font-bold mb-2">1. Project Initialization (Month 1)</h3>
             <ul class="list-disc list-inside mb-2">
               <li>Define project objectives and scope.</li>
               <li>Choose the technology stack.</li>
@@ -43,7 +43,7 @@
           </div>
   
           <div class="mb-6">
-            <h3 class="text-xl font-bold mb-2">2. Basic Functionality Prototype (Month 3-4)</h3>
+            <h3 class="text-xl font-bold mb-2">2. Basic Functionality Prototype (Month 2)</h3>
             <ul class="list-disc list-inside mb-2">
               <li>Implement user registration and login.</li>
               <li>Develop donation logging functionality.</li>
@@ -54,7 +54,7 @@
           </div>
   
           <div class="mb-6">
-            <h3 class="text-xl font-bold mb-2">3. Alpha Release (Month 5)</h3>
+            <h3 class="text-xl font-bold mb-2">3. Alpha Release (Month 3)</h3>
             <ul class="list-disc list-inside mb-2">
               <li>Test core features for bugs and usability.</li>
               <li>Create documentation for setting up and using the system.</li>
@@ -64,7 +64,7 @@
           </div>
   
           <div class="mb-6">
-            <h3 class="text-xl font-bold mb-2">4. Expert Collaboration (Month 6)</h3>
+            <h3 class="text-xl font-bold mb-2">4. Expert Collaboration (Month 4)</h3>
             <ul class="list-disc list-inside mb-2">
               <li>Reach out to potential experts in healthcare and other relevant fields.</li>
               <li>Conduct meetings to gather their input.</li>
@@ -73,7 +73,7 @@
           </div>
   
           <div class="mb-6">
-            <h3 class="text-xl font-bold mb-2">5. Feature Expansion (Month 7-8)</h3>
+            <h3 class="text-xl font-bold mb-2">5. Feature Expansion (Month 5 - 6)</h3>
             <ul class="list-disc list-inside mb-2">
               <li>Implement advanced reporting and analytics.</li>
               <li>Develop donation tracking for different categories (e.g., funds, goods, services).</li>
@@ -83,7 +83,7 @@
           </div>
   
           <div class="mb-6">
-            <h3 class="text-xl font-bold mb-2">6. Beta Release (Month 9)</h3>
+            <h3 class="text-xl font-bold mb-2">6. Beta Release (Month 7 - 9)</h3>
             <ul class="list-disc list-inside mb-2">
               <li>Perform extensive testing and bug fixing.</li>
               <li>Update documentation with new features.</li>
@@ -144,7 +144,7 @@
   
           <h2 class="text-2xl font-semibold mt-6 mb-4">Join Us!</h2>
           <p class="text-lg mb-4">
-            Follow our progress on <a href="https://github.com/dynamic2code/Donation_tracking" class="text-blue-500 underline">GitHub Django</a> or <a href="https://github.com/dynamic2code/Donation-_tracking" class="text-blue-500 underline">GitHub Nuxt</a>, where you can find all the details and how to contribute. Stay updated with our latest news and milestones. We can't wait to build something great together! 🎉
+            Follow our progress on <a href="https://github.com/dynamic2code/Donation_tracking" class="text-blue-500 underline">GitHub Django</a> or <a href="https://github.com/dynamic2code/Donation-_tracking" class="text-blue-500 underline">GitHub Nuxt</a>, where you can find all the details and how to contribute. Stay updated with our latest news and milestones. I can't wait to build something great together! 🎉
           </p>
         </div>
       </div>
