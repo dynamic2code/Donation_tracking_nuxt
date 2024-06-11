@@ -34,32 +34,31 @@
           <div class="mb-6">
             <h3 class="text-xl font-bold mb-2">1. Project Initialization (Month 1)</h3>
             <ul class="list-disc list-inside mb-2">
-              <li>Define project objectives and scope.</li>
-              <li>Choose the technology stack.</li>
-              <li>Set up the project repository on GitHub.</li>
-              <li>Write a detailed README file.</li>
-              <li>Create an initial project roadmap.</li>
+              <li>Define project objectives and scope.✅</li>
+              <li>Choose the technology stack.✅</li>
+              <li>Set up the project repository on GitHub. ✅</li>
+              <li>Write a detailed README file.✅</li>
+              <li>Create an initial project roadmap.✅</li>
             </ul>
           </div>
   
           <div class="mb-6">
-            <h3 class="text-xl font-bold mb-2">2. Basic Functionality Prototype (Month 2)</h3>
+            <h3 class="text-xl font-bold mb-2">2. Basic Functionality Prototype (Month 1-2)</h3>
             <ul class="list-disc list-inside mb-2">
-              <li>Implement user registration and login.</li>
-              <li>Develop donation logging functionality.</li>
-              <li>Create basic reporting (e.g., total donations received).</li>
-              <li>Design a simple user interface.</li>
-              <li>Set up a development environment guide for contributors.</li>
+              <li>System design 📍</li>
+              <li>API implementation</li>
+              <li>API testing and deployment</li>
+              <li>Frontend implementation</li>
+              <li>Frontend testing and deployment</li>
             </ul>
           </div>
   
           <div class="mb-6">
             <h3 class="text-xl font-bold mb-2">3. Alpha Release (Month 3)</h3>
             <ul class="list-disc list-inside mb-2">
-              <li>Test core features for bugs and usability.</li>
               <li>Create documentation for setting up and using the system.</li>
-              <li>Announce the alpha release on our channels.</li>
-              <li>Invite feedback from early users and contributors.</li>
+              <li>Announce the alpha release on channels.</li>
+              <li>Invite feedback from users and contributors.</li>
             </ul>
           </div>
   

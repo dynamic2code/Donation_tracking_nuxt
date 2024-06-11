@@ -73,6 +73,42 @@
             <li><strong>Then</strong> my blood is used to save a life.</li>
           </ul>
 
+          <h2 class="text-2xl font-semibold mt-6 mb-4">Project Objectives</h2>
+          <ol class="list-decimal list-inside mb-4">
+            <li>Develop an online platform for donors to fill out and submit donation forms, along with initial assessments to determine their eligibility.</li>
+            <li>Maintain a secure, comprehensive digital record of all donations to ensure accurate tracking and easy access to information.</li>
+            <li>Implement an automated follow-up system to communicate with donors about their donation status and any post-donation updates or requirements.</li>
+            <li>Create a robust search feature that allows administrators to quickly locate specific donations based on criteria such as donor name, donation type, date, and status.</li>
+            <li>Integrate powerful analytics tools to analyze donation patterns, donor demographics, and the effectiveness of donation campaigns.</li>
+            <li>Develop a method to track donations throughout the entire process, from submission to utilization, ensuring transparency and accountability.</li>
+          </ol>
+
+          <h2 class="text-2xl font-semibold mt-6 mb-4">Project Scope</h2>
+          <ul class="list-disc list-inside mb-4">
+            <li>
+              <strong>Scope Statement:</strong>
+              <p class="ml-4">The project includes developing a web-based application with features for user registration, donation tracking, documentation management, and communication tools (Africa's Talking API for now). It excludes third-party integrations at this stage.</p>
+            </li>
+            <li>
+              <strong>Deliverables:</strong>
+              <p class="ml-4">The deliverables include a fully functional web application, user manuals, training materials, and a support plan.</p>
+            </li>
+            <li>
+              <strong>Inclusions and Exclusions:</strong>
+              <p class="ml-4">The project includes developing the backend system using Django and the frontend using Nuxt.js .</p>
+            </li>
+            <li>
+              <strong>Constraints and Assumptions:</strong>
+              <p class="ml-4">One key assumption is that all donation units will be labeled with a QR code to aid in identification and tracking. we are starting with blood donation then we'll move to more types of donation</p>
+            </li>
+          </ul>
+
+          <h1 class="text-4xl font-bold text-center mb-6">Diagrams</h1>
+          <h2 class="text-2xl font-semibold mt-6 mb-4">Data flow Diagram</h2>
+          <img src="/Untitled Diagram.drawio (2).png" alt="">
+          <a href="/Untitled Diagram.drawio.pdf" target="_blank"><h3>Open PDF 📄</h3></a>
+
+
 
           <h2 class="text-2xl font-semibold mt-6 mb-4">Join Us!</h2>
           <p class="text-lg mb-4">
