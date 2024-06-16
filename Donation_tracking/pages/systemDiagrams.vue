@@ -108,7 +108,13 @@
           <img src="/Untitled Diagram.drawio (2).png" alt="">
           <a href="/Untitled Diagram.drawio.pdf" target="_blank"><h3>Open PDF 📄</h3></a>
 
+          <h2 class="text-2xl font-semibold mt-6 mb-4">Sequence Diagram</h2>
+          <img src="/sequence.drawio.png" alt="">
+          <a href="/sequence Diagram.drawio.pdf" target="_blank"><h3>Open PDF 📄</h3></a>
 
+          <h2 class="text-2xl font-semibold mt-6 mb-4">Class Relation Diagram</h2>
+          <img src="/class diagram.drawio.png" alt="">
+          <a href="/class diagram.drawio.pdf" target="_blank"><h3>Open PDF 📄</h3></a>
 
           <h2 class="text-2xl font-semibold mt-6 mb-4">Join Us!</h2>
           <p class="text-lg mb-4">
