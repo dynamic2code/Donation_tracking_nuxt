@@ -45,8 +45,8 @@
           <div class="mb-6">
             <h3 class="text-xl font-bold mb-2">2. Basic Functionality Prototype (Month 1-2)</h3>
             <ul class="list-disc list-inside mb-2">
-              <li>System design 📍</li>
-              <li>API implementation</li>
+              <li>System design ✅</li>
+              <li>API implementation📍</li>
               <li>API testing and deployment</li>
               <li>Frontend implementation</li>
               <li>Frontend testing and deployment</li>
