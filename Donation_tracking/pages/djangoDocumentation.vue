@@ -78,7 +78,8 @@
     },
     "body": {
       "first_name": "Jane",
-      "last_name": "Doe",
+      "second_name": "Doe",
+      "gender":"F/M",
       "email": "janedoe@example.com",
       "phone_number": "0987654321",
       "town": "Springfield",
@@ -188,15 +189,11 @@
       "donor": 1,
       "hospital": 2,
       "doctor": 3,
-      "donation_type": 1,
+      "donation_type": "blood/money/medication",
       "body_part": null,
       "amount": 100.0,
-      "blood_volume": 0.5,
-      "blood_type": "O+",
+      "blood_volume": 1, //pint
       "hemoglobin_level": 13.5,
-      "date_of_last_donation": "2023-12-01",
-      "donation_date": "2024-01-15",
-      "purpose": "Charity",
       "payment_method": "Credit Card",
       "transaction_id": "abc123"
     }
