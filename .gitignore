@@ -10,3 +10,4 @@ Donation_tracking/coverage/
 .idea/
 yarn.lock
 Donation_tracking/.nuxt
+resources/

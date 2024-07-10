@@ -4,7 +4,7 @@
       <nav class="w-1/5 bg-gray-800 text-white p-4">
         <ul class="space-y-4">
           <li><router-link to="/" class="block py-2 px-4 rounded hover:bg-gray-700">Home</router-link></li>
-          <li><router-link to="/mainApp" class="block py-2 px-4 rounded hover:bg-gray-700">Main App</router-link></li>
+          <li><router-link to="/documentation" class="block py-2 px-4 rounded hover:bg-gray-700">Main Documentation</router-link></li>
           <li><router-link to="/djangoDocumentation" class="block py-2 px-4 rounded hover:bg-gray-700">Django Documentation</router-link></li>
           <li><router-link to="/nuxtDocumentation" class="block py-2 px-4 rounded hover:bg-gray-700">Nuxt Documentation</router-link></li>
           <li><router-link to="/systemDiagrams" class="block py-2 px-4 rounded hover:bg-gray-700">System Diagrams and Design</router-link></li>

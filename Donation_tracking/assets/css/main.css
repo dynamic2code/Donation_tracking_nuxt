@@ -1,3 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 body{
-    color: black;
+    background-color: white;
+    font-family: "ABeeZee", sans-serif;
+}
+
+.smallText{
+    font-size: 2rem;
+}
+
+.normalText{
+    font-size: 1rem;
+}
+
+.largeText{
+    font-size: 20px;
+}
+.primary_button{
+    background-color: blue;
+    color: white;
+    width: fit-content;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.secondary_button{
+    width: fit-content;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.xlText{
+    color: #2C3651;
+    font-size: 2.5rem;   
+    font-weight: bold; 
+}
+.largeText{
+    color: #2C3651;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.normalText{
+    color: #8D8D8D;
+    font-size: 1rem;
+}
+.buttonText{
+
+}
+.smallText{
+    color: #8D8D8D;
+    font-size: 0.8rem;
+}
+.container{
+    /* background-color: black; */
+    width: 90%;
+}
+.holder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: brown; */
 }
