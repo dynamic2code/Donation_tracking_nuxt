@@ -30,5 +30,15 @@
 </script>
   
 <style scoped>
+  * {
+    color: black;
+  }
 
+  a {
+    color: rgb(18, 125, 175);
+  }
+
+  .nav-item {
+    color: white;
+  }
 </style> 

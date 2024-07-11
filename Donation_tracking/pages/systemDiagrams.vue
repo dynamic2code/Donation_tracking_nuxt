@@ -129,4 +129,15 @@
 </script>
 
 <style scoped>
+  * {
+    color: black;
+  }
+
+  a {
+    color: rgb(2, 171, 250);
+  }
+
+  .nav-item {
+    color: white;
+  }
 </style>
