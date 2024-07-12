@@ -20,6 +20,12 @@
           <p class="text-lg mb-4">
             Follow our progress on <a href="https://github.com/dynamic2code/Donation_tracking" class="text-blue-500 underline">GitHub Django</a> or <a href="https://github.com/dynamic2code/Donation-_tracking" class="text-blue-500 underline">GitHub Nuxt</a>, where you can find all the details and how to contribute. Stay updated with our latest news and milestones. I can't wait to build something great together! 🎉
           </p>
+
+          <h2 class="text-2xl font-semibold mt-6 mb-4">landing Page inspiration</h2>
+          <img src="/Medica Hospital.jpeg" alt="">
+
+          <h2 class="text-2xl font-semibold mt-6 mb-4">Main app inspiration </h2>
+          <img src="/GRZogVxaUAAJy19.jpeg" alt="">
         </div>
       </div>
     </div>
