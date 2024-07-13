@@ -26,6 +26,59 @@
 
           <h2 class="text-2xl font-semibold mt-6 mb-4">Main app inspiration </h2>
           <img src="/GRZogVxaUAAJy19.jpeg" alt="">
+
+          <h2 class="text-2xl font-semibold mt-6 mb-4">User Groups and Their Needs</h2>
+
+          <h3 class="text-xl font-semibold mt-4 mb-2">1. Hospital Management:</h3>
+          <p class="text-lg mb-4">
+            <ul class="list-disc ml-6">
+              <li><strong>Dashboard:</strong> Overview of operations, financials, and KPIs.</li>
+              <li><strong>Staff Management:</strong> Scheduling, performance tracking, and communication tools.</li>
+              <li><strong>Resource Allocation:</strong> Inventory tracking for supplies and equipment.</li>
+              <li><strong>Reporting:</strong> Detailed reports on hospital performance, patient outcomes, and financial health.</li>
+            </ul>
+          </p>
+
+          <h3 class="text-xl font-semibold mt-4 mb-2">2. Doctors:</h3>
+          <p class="text-lg mb-4">
+            <ul class="list-disc ml-6">
+              <li><strong>Patient Records:</strong> Access to medical histories, test results, and treatment plans.</li>
+              <li><strong>Appointment Management:</strong> Scheduling and reminders.</li>
+              <li><strong>Communication Tools:</strong> Secure messaging with colleagues and patients.</li>
+              <li><strong>Clinical Decision Support:</strong> Tools for diagnostics and treatment planning.</li>
+            </ul>
+          </p>
+
+          <h3 class="text-xl font-semibold mt-4 mb-2">3. Nurses:</h3>
+          <p class="text-lg mb-4">
+            <ul class="list-disc ml-6">
+              <li><strong>Task Management:</strong> Daily schedules, reminders, and task lists.</li>
+              <li><strong>Patient Monitoring:</strong> Tools for tracking vital signs and symptoms.</li>
+              <li><strong>Medication Administration:</strong> Records of medications given and schedules.</li>
+              <li><strong>Communication:</strong> Access to doctors and other nurses.</li>
+            </ul>
+          </p>
+
+          <h3 class="text-xl font-semibold mt-4 mb-2">4. Patients:</h3>
+          <p class="text-lg mb-4">
+            <ul class="list-disc ml-6">
+              <li><strong>Appointment Scheduling:</strong> Easy booking and reminders.</li>
+              <li><strong>Health Records:</strong> Access to personal medical history, test results, and treatment plans.</li>
+              <li><strong>Billing:</strong> Clear information on bills and payment options.</li>
+              <li><strong>Communication:</strong> Direct messaging with healthcare providers.</li>
+            </ul>
+          </p>
+
+          <h3 class="text-xl font-semibold mt-4 mb-2">5. Donors:</h3>
+          <p class="text-lg mb-4">
+            <ul class="list-disc ml-6">
+              <li><strong>Donation Portal:</strong> Interface for making contributions.</li>
+              <li><strong>Impact Tracking:</strong> Information on donation usage and impact.</li>
+              <li><strong>Communication:</strong> Updates and acknowledgments from the hospital.</li>
+            </ul>
+          </p>
+
+
         </div>
       </div>
     </div>
