@@ -19,8 +19,8 @@
                     <span class="normalText">about</span>
                 </NuxtLink>
 
-                <NuxtLink to="/donation" class="primary_button" > 
-                    <span class="buttonText" > Go to dash board</span>
+                <NuxtLink to="/donor" class="primary_button" > 
+                    <span class="buttonText" > Go to dashboard</span>
                 </NuxtLink>
 
             </div>
