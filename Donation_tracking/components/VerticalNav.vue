@@ -12,11 +12,10 @@
           />
         </div>
       </div>
-  
       <div class="navPart" v-for="(section, index) in verticalNav.menu" :key="index">
         <span class="normalText bold">{{ section.title }}</span>
         <button class="navButton" v-for="(item, idx) in section.items" :key="idx">
-          <img :src="item.icon" :alt="item.name">
+          <UIcon :name="item.icon" dynamic :style="{ color: 'black' }" />
           <span class="mainText">{{ item.name }}</span>
         </button>
       </div>
@@ -37,29 +36,29 @@
       {
         title: "Main Menu",
         items: [
-          { name: "Dashboard", icon: "/dashboard.png", route: "/dashboard.png" },
-          { name: "Tasks", icon: "tasks-icon", route: "/tasks" },
-          { name: "Calendar", icon: "calendar-icon", route: "/calendar" },
-          { name: "Settings", icon: "settings-icon", route: "/settings" },
-          { name: "Help & Center", icon: "help-icon", route: "/help" }
+          { name: "Dashboard", icon: "i-tabler-dashboard", route: "/dashboard" },
+          { name: "Tasks", icon: "i-tabler-layout-dashboard", route: "/tasks" },
+          { name: "Calendar", icon: "i-tabler-calendar", route: "/calendar" },
+          { name: "Settings", icon: "i-tabler-settings", route: "/settings" },
+          { name: "Help & Center", icon: "i-tabler-help", route: "/help" }
         ]
       },
       {
         title: "Team Management",
         items: [
-          { name: "Performance", icon: "performance-icon", route: "/performance" },
-          { name: "Payrolls", icon: "payrolls-icon", route: "/payrolls" },
-          { name: "Invoices", icon: "invoices-icon", route: "/invoices" },
-          { name: "Employees", icon: "employees-icon", route: "/employees" },
-          { name: "Hiring", icon: "hiring-icon", route: "/hiring" }
+          { name: "Performance", icon: "i-tabler-chart-area", route: "/performance" },
+          { name: "Payrolls", icon: "i-tabler-file-dollar", route: "/payrolls" },
+          { name: "Invoices", icon: "i-tabler-clock-dollar", route: "/invoices" },
+          { name: "Employees", icon: "i-tabler-users-group", route: "/employees" },
+          { name: "Hiring", icon: "i-tabler-user-plus", route: "/hiring" }
         ]
       },
       {
         title: "List",
         items: [
-          { name: "Salary Information", icon: "salary-icon", route: "/salary-information" },
-          { name: "Compensation Breakdown", icon: "compensation-icon", route: "/compensation-breakdown" },
-          { name: "Project-specific Data", icon: "project-data-icon", route: "/project-specific-data" }
+          { name: "Salary Information", icon: "i-tabler-moneybag", route: "/salary-information" },
+          { name: "Compensation Breakdown", icon: "i-tabler-chart-infographic", route: "/compensation-breakdown" },
+          { name: "Project-specific Data", icon: "i-tabler-hammer", route: "/project-specific-data" }
         ]
       }
     ],
@@ -99,8 +98,12 @@
   }
   
   .navButton:hover {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
     background-color: white;
-    border: 1px solid black;
+    border: 0.5px solid rgb(168, 168, 168);
   }
   
   .navButton > * {

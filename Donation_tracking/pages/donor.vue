@@ -27,12 +27,11 @@
     margin-right: 20px;
     height: 98%;
     margin-top: 20px;
-    overflow: auto;
 }
 .content{
     width: 79%;
     background-color: white ;
-    height: 100%;
+    min-height: 600px;
     border-radius: 10px;
 }
 </style>
