@@ -74,9 +74,10 @@ onMounted(() => {
     /* background-color: aquamarine; */
     margin: 5px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 .image_raw{
-    width: 30%;
+    width: 20%;
     margin-right: 5px;
     /* background-color: blue; */
 }
@@ -94,8 +95,10 @@ onMounted(() => {
     width: 30px;
 }
 .text{
+    width: 80%;
     display: flex;
     flex-direction: column;
+    /* background-color: blue */
 }
 .info{
     width: 100%;

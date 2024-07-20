@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+:root {
+    --vt-nawe-white: #FFFFFF;
+    --vt-nawe-black:#000000;
+    --vt-nawe-text:black;
+    --vt-nawe-outline:#dbdbdb ;
+}
+:root {
+    --color-background: var(--vt-postcard-white);
+}
+  
+@media (prefers-color-scheme: dark) {
+:root {
+    /* --color-background: var(--vt-postcard-black); */
+}
+}
+
 body{
     background-color: white;
     font-family: "ABeeZee", sans-serif;
@@ -34,6 +50,11 @@ body{
     font-size: 2.5rem;   
     font-weight: bold; 
 }
+.lText{
+    color: #2C3651;
+    font-size: 1.5rem;   
+    font-weight: bold; 
+}
 .largeText{
     color: #2C3651;
     font-size: 1.2rem;
@@ -61,8 +82,25 @@ body{
 }
 .holder{
     width: 100%;
+    background-color: #F2F2F2;
+    min-height: 100vh;
+    padding: 10px;    
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: brown; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.nav{
+    width: 16%;
+    margin-right: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.content{
+    width: 85%;
+    background-color: white ;
+    border-radius: 10px;
+    min-height: 900px;
+    height: 100%;
 }

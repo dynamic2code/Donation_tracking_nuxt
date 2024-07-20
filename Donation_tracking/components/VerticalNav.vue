@@ -1,16 +1,15 @@
 <template>
-    <div>
+    <div class="full">
       <div class="top">
-        <div class="profile">
-          <img src="@/assets/images/logo-no-background.png" alt="">
-        </div>
-        <div>
+        <NuxtLink to="/"class="profile">
+          <img src="@/assets/images/nawe-health-system-favicon-black.png" alt="">
+        </NuxtLink>
           <UAvatar
             size="md"
             src="https://avatars.githubusercontent.com/u/739984?v=4"
             alt="Avatar"
+            :style="{border: '1px solid black'}"
           />
-        </div>
       </div>
       <div class="navPart" v-for="(section, index) in verticalNav.menu" :key="index">
         <span class="normalText bold">{{ section.title }}</span>
@@ -22,54 +21,22 @@
     </div>
   </template>
   
-  <script setup>
-  const verticalNav = {
-    logo: {
-      src: "logo.png",
-      alt: "Ocupite Logo"
-    },
-    user: {
-      name: "Ali",
-      avatar: "user-avatar.png"
-    },
-    menu: [
-      {
-        title: "Main Menu",
-        items: [
-          { name: "Dashboard", icon: "i-tabler-dashboard", route: "/dashboard" },
-          { name: "Tasks", icon: "i-tabler-layout-dashboard", route: "/tasks" },
-          { name: "Calendar", icon: "i-tabler-calendar", route: "/calendar" },
-          { name: "Settings", icon: "i-tabler-settings", route: "/settings" },
-          { name: "Help & Center", icon: "i-tabler-help", route: "/help" }
-        ]
-      },
-      {
-        title: "Team Management",
-        items: [
-          { name: "Performance", icon: "i-tabler-chart-area", route: "/performance" },
-          { name: "Payrolls", icon: "i-tabler-file-dollar", route: "/payrolls" },
-          { name: "Invoices", icon: "i-tabler-clock-dollar", route: "/invoices" },
-          { name: "Employees", icon: "i-tabler-users-group", route: "/employees" },
-          { name: "Hiring", icon: "i-tabler-user-plus", route: "/hiring" }
-        ]
-      },
-      {
-        title: "List",
-        items: [
-          { name: "Salary Information", icon: "i-tabler-moneybag", route: "/salary-information" },
-          { name: "Compensation Breakdown", icon: "i-tabler-chart-infographic", route: "/compensation-breakdown" },
-          { name: "Project-specific Data", icon: "i-tabler-hammer", route: "/project-specific-data" }
-        ]
-      }
-    ],
-    upgradePlan: {
-      status: "free trial",
-      daysLeft: 5
-    }
-  };
+<script setup>
+const props = defineProps({
+  verticalNav: {
+    type: Object,
+    required: true
+  }
+});
+
   </script>
   
   <style scoped>
+  /* .full{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  } */
   .top {
     display: flex;
     justify-content: space-between;
@@ -78,6 +45,10 @@
   
   .profile {
     width: 50%;
+  }
+  .profile img{
+    width: 50px;
+    height: 50px;
   }
   
   .navPart {
@@ -90,20 +61,19 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 5px;
+    padding: 10px; /* Increased padding for better visual consistency */
     margin-bottom: 5px;
     border-radius: 10px;
     background-color: #F2F2F2;
-    transition: background-color 0.3s, border 0.3s;
+    border: 1px solid transparent; /* Set a transparent border to keep size consistent */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
-  
+
   .navButton:hover {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 5px;
-    border-radius: 10px;
     background-color: white;
-    border: 0.5px solid rgb(168, 168, 168);
+    border: 1px solid var(--vt-nawe-outline);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   }
   
   .navButton > * {

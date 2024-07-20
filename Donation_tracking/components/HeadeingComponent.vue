@@ -1,5 +1,5 @@
 <template>
-    <div class="holder">
+    <div class="hold">
         <div class="warning" >
             <span class="buttonText warning_badge">Prototype</span>            
         </div>
@@ -18,9 +18,17 @@
                 <NuxtLink to="/about" class="secondary_button" > 
                     <span class="normalText">about</span>
                 </NuxtLink>
-
                 <NuxtLink to="/donor" class="primary_button" > 
-                    <span class="buttonText" > Go to dashboard</span>
+                    <span class="buttonText" > Donor</span>
+                </NuxtLink>
+                <NuxtLink to="/nurse" class="primary_button" > 
+                    <span class="buttonText" > Nurses</span>
+                </NuxtLink>
+                <NuxtLink to="/doctor" class="primary_button" > 
+                    <span class="buttonText" > Doctor</span>
+                </NuxtLink>
+                <NuxtLink to="/management" class="primary_button" > 
+                    <span class="buttonText" > Management</span>
                 </NuxtLink>
 
             </div>
@@ -32,12 +40,15 @@
 </script>
 
 <style scoped>
-.holder {
+.hold {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
+    width: 100%;
+    background-color: white;
+    /* background-color: #F2F2F2;     */
 }
 .warning{
     background-color: white;
