@@ -1,7 +1,7 @@
 <template>
     <div class="holder">
         <div class="warning" >
-            <span class="buttonText">Prototype use only</span>            
+            <span class="buttonText warning_badge">Prototype</span>            
         </div>
 
         <div class="container" >
@@ -40,12 +40,38 @@
     height: auto;
 }
 .warning{
-    background-color: rgb(223, 151, 151);
+    background-color: white;
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+}
+.warning_badge {
+  background-color: rgb(255, 196, 196);
+  color: black;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  position: relative; /* Ensure pseudo-element is positioned relative to the parent */
+  z-index: 1;
+}
+
+.warning_badge::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, red, yellow, red);
+  z-index: -1; /* Ensure the pseudo-element is behind the text */
+}
+
+.warning_badge > * {
+  position: relative;
+  z-index: 1;
 }
 .container{
     display: flex;
