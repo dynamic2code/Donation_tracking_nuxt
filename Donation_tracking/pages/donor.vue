@@ -5,7 +5,8 @@
         </div>
         <div class="content">
             <ContentHeader></ContentHeader>
-            
+            <DonorDarshboard></DonorDarshboard>
+
         </div>
             
     </div>
@@ -52,11 +53,10 @@ menu: [
     display: flex;
     flex-direction: column;
     justify-content: start;
-}
-.content{
-    width: 79%;
-    background-color: white ;
-    min-height: 600px;
-    border-radius: 10px;
 } */
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 </style>
