@@ -21,8 +21,8 @@
             Follow our progress on <a href="https://github.com/dynamic2code/Donation_tracking" class="text-blue-500 underline">GitHub Django</a> or <a href="https://github.com/dynamic2code/Donation-_tracking" class="text-blue-500 underline">GitHub Nuxt</a>, where you can find all the details and how to contribute. Stay updated with our latest news and milestones. I can't wait to build something great together! 🎉
           </p>
 
-          <h2 class="text-2xl font-semibold mt-6 mb-4">landing Page inspiration</h2>
-          <img src="/Medica Hospital.jpeg" alt="">
+          <!-- <h2 class="text-2xl font-semibold mt-6 mb-4">landing Page inspiration</h2>
+          <img src="/Medica Hospital.jpeg" alt=""> -->
 
           <h2 class="text-2xl font-semibold mt-6 mb-4">Main app inspiration </h2>
           <img src="/GRZogVxaUAAJy19.jpeg" alt="">
@@ -44,7 +44,7 @@
             <ul class="list-disc ml-6">
               <li><strong>Patient Records:</strong> Access to medical histories, test results, and treatment plans.</li>
               <li><strong>Appointment Management:</strong> Scheduling and reminders.</li>
-              <li><strong>Communication Tools:</strong> Secure messaging with colleagues and patients.</li>
+              <li><strong>Communication Tools:</strong> Secure messaging with colleagues (nurses, lab technicians etc) and patients.</li>
               <li><strong>Clinical Decision Support:</strong> Tools for diagnostics and treatment planning.</li>
             </ul>
           </p>
@@ -72,7 +72,7 @@
           <h3 class="text-xl font-semibold mt-4 mb-2">5. Donors:</h3>
           <p class="text-lg mb-4">
             <ul class="list-disc ml-6">
-              <li><strong>Donation Portal:</strong> Interface for making contributions.</li>
+              <li><strong>Donation Portal:</strong> Interface for making contributions and filling out blood donation forms.</li>
               <li><strong>Impact Tracking:</strong> Information on donation usage and impact.</li>
               <li><strong>Communication:</strong> Updates and acknowledgments from the hospital.</li>
             </ul>
