@@ -46,6 +46,7 @@
               <li><strong>Appointment Management:</strong> Scheduling and reminders.</li>
               <li><strong>Communication Tools:</strong> Secure messaging with colleagues (nurses, lab technicians etc) and patients.</li>
               <li><strong>Clinical Decision Support:</strong> Tools for diagnostics and treatment planning.</li>
+              <li><strong> Donations:</strong> Tools for reviewing donation request, adding to the blood bank, searching, getting reports and removing the blood units.</li>
             </ul>
           </p>
 
