@@ -1,26 +1,31 @@
 <template>
-    <div class="full">
-      <div class="top">
-        <NuxtLink to="/"class="profile">
-          <img src="@/assets/images/nawe-health-system-favicon-black.png" alt="">
-        </NuxtLink>
-          <UAvatar
-            size="md"
-            src="https://avatars.githubusercontent.com/u/739984?v=4"
-            alt="Avatar"
-            :style="{border: '1px solid black'}"
-          />
-      </div>
-      <div class="navPart" v-for="(section, index) in verticalNav.menu" :key="index">
-        <span class="normalText bold">{{ section.title }}</span>
-        <button class="navButton" v-for="(item, idx) in section.items" :key="idx">
-          <UIcon :name="item.icon" dynamic :style="{ color: 'black' }" />
-          <span class="mainText">{{ item.name }}</span>
-        </button>
-      </div>
+  <div class="full">
+    <div class="top">
+      <NuxtLink to="/" class="profile">
+        <img src="@/assets/images/nawe-health-system-favicon-black.png" alt="Logo">
+      </NuxtLink>
+      <UAvatar
+        size="md"
+        src="https://avatars.githubusercontent.com/u/739984?v=4"
+        alt="Avatar"
+        :style="{border: '1px solid black'}"
+      />
     </div>
-  </template>
-  
+    <div class="navPart" v-for="(section, index) in verticalNav.menu" :key="index">
+      <span class="normalText bold">{{ section.title }}</span>
+      <button 
+        class="navButton" 
+        v-for="(item, idx) in section.items" 
+        :key="idx" 
+        @click="handleNavClick(item.component)"
+      >
+        <UIcon :name="item.icon" dynamic :style="{ color: 'black' }" />
+        <span class="mainText">{{ item.name }}</span>
+      </button>
+    </div>
+  </div>
+</template>
+
 <script setup>
 const props = defineProps({
   verticalNav: {
@@ -29,9 +34,17 @@ const props = defineProps({
   }
 });
 
-  </script>
+// Add emit for component switching
+const emit = defineEmits(['changeComponent']);
+
+const handleNavClick = (componentName) => {
+  // console.log('Emitting component change:', componentName);
+  emit('changeComponent', componentName);
+};
+</script>
+
   
-  <style scoped>
+<style scoped>
   /* .full{
     height: 100%;
     display: flex;

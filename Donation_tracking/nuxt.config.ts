@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/main.css'
   ],
+  runtimeConfig: {
+    public: {
+      api: process.env.API_URL
+    }
+  },
   shadcn: {
     /**
      * Prefix for all the imported component

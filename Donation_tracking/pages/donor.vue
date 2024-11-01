@@ -1,18 +1,40 @@
 <template>
     <div class="holder">
         <div class="nav">
-            <VerticalNav :verticalNav="verticalNav"></VerticalNav>
+            <VerticalNav :verticalNav="verticalNav" @changeComponent="switchComponent"></VerticalNav>
         </div>
         <div class="content">
             <ContentHeader></ContentHeader>
-            <DonorDarshboard></DonorDarshboard>
-
+            <!-- <DonorDarshboard></DonorDarshboard> -->
+            <component :is="currentComponent" />
         </div>
-            
     </div>
 </template>
 
 <script setup>
+const components = {
+  DonorDashboard: defineAsyncComponent(() => import('@/components/donor/Dashboard.vue')),
+  DonorDonationForm: defineAsyncComponent(() => import('@/components/donor/DonationForm.vue')),
+  DonorDonations: defineAsyncComponent(() => import('@/components/donor/Donations.vue')),
+  BloodDrives: defineAsyncComponent(() => import('@/components/donor/BloodDrives.vue')),
+  Settings: defineAsyncComponent(() => import('@/components/donor/Settings.vue')),
+  Help: defineAsyncComponent(() => import('@/components/donor/Help.vue'))
+};
+
+const currentComponent = ref(components.DonorDashboard);
+
+// Function to switch the component based on the event
+const switchComponent = (componentName) => {
+//   console.log('Switching to component:', componentName); 
+  // Check if componentName exists in the components map
+  if (components[componentName]) {
+    currentComponent.value = components[componentName];
+  } else {
+    console.warn(`Component "${componentName}" not found.`);
+    currentComponent.value = components.DonorDashboard; // Default fallback
+  }
+};
+
 const verticalNav = {
 logo: {
     src: "logo.png",
@@ -26,12 +48,12 @@ menu: [
     {
     title: "Main Menu",
     items: [
-        { name: "Dashboard", icon: "i-tabler-dashboard", route: "/dashboard" },
-        { name: "Donate", icon: "i-tabler-heart-handshake", route: "/tasks" },
-        { name: "Donations", icon: "i-tabler:medicine-syrup", route: "/calendar" },
-        { name: "Blood Drives", icon: "i-tabler:building-community", route: "/calendar" },
-        { name: "Settings", icon: "i-tabler-settings", route: "/settings" },
-        { name: "Help & Center", icon: "i-tabler-help", route: "/help" }
+        { name: "Dashboard", icon: "i-tabler-dashboard", component: "donor/Dashboard" },
+        { name: "Donate", icon: "i-tabler-heart-handshake", component: "DonorDonationForm" },
+        { name: "Donations", icon: "i-tabler:medicine-syrup", component: "DonorDonations" },
+        { name: "Blood Drives", icon: "i-tabler:building-community", component: "BloodDrives" },
+        { name: "Settings", icon: "i-tabler-settings", component: "Settings" },
+        { name: "Help & Center", icon: "i-tabler-help", component: "Help" }
     ]
     },
 
