@@ -79,7 +79,7 @@ body{
 }
 .container{
     /* background-color: black; */
-    width: 90%;
+    width: 95%;
 }
 .holder{
     width: 100%;
@@ -104,6 +104,19 @@ body{
     border-radius: 10px;
     min-height: 900px;
     height: 100%;
+}
+.container{
+    display: flex;
+    width: 90%;
+    height: 70px;
+    align-items: center;
+}
+.holders{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 form {
     display: flex;
