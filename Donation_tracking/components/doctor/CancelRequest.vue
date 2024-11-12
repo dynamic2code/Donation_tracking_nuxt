@@ -26,6 +26,7 @@ const close = () => {
     top: 0;
     z-index: 4;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
     /* background-color: aquamarine; */
     justify-content: center;
     align-items: center;
@@ -36,6 +37,7 @@ const close = () => {
     /* background-color: #962d2d; */
     border-radius: 20px;
     border: 2px solid var(--vt-nawe-outline);
+    background-color: var(--vt-nawe-white);
     z-index: 5;
 }
 .cancel{

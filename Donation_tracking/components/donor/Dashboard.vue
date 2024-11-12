@@ -57,8 +57,14 @@
             <span class="smallText">more drives</span>             
             <Icon name="i-tabler:chevron-right" dynamic :style="{ color: 'black'}"/>
           </div>
-        
         </div>
+        <div class="blood_drive">
+          <NuxtLink to="/" v-for="i in 10">
+            <img src="@/assets/images/istockphoto-2152866937-612x612.jpg" alt="">
+          </NuxtLink>
+        </div>
+
+
         
       </div>
 
@@ -75,7 +81,7 @@
     <div class="list">
       <div class="more">
         <div>
-
+          <span class='normalText'>Donor heros</span>
         </div>
 
         <div>
@@ -421,15 +427,18 @@ const data = [
 .second >*{
   border: 1px solid var(--vt-nawe-outline) ;   
   border-radius: 10px;
-  height: 220px;
+  height: 200px;
   padding: 3px;
 }
 .upcoming{
   width: 59%;
+  background-color: var(--vt-nawe-light-green);
+  overflow: hidden;
 
 }
 .performance{
   width: 40%;
+  background-color: var(--vt-nawe-light-brown);
 }
 .list{
   display: flex;
@@ -439,5 +448,20 @@ const data = [
   border-radius: 10px;
   height: 220px;
   padding: 3px;
+}
+.blood_drive{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.blood_drive img{
+  display: block;
+  width: 200px;
+  margin: 5px;
+  border-radius: 20px;
+  height: auto;
+  object-fit: cover;
+
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="full">
+  <div class="">
     <div class="top">
       <NuxtLink to="/" class="profile">
         <img src="@/assets/images/nawe-health-system-favicon-black.png" alt="Logo">
@@ -12,7 +12,11 @@
       />
     </div>
     <div class="navPart" v-for="(section, index) in verticalNav.menu" :key="index">
-      <span class="normalText bold">{{ section.title }}</span>
+      <div class="navPart__title">
+        <span class="normalText">{{ section.title }}</span>  
+        <hr class="line">      
+      </div>
+
       <button 
         class="navButton" 
         v-for="(item, idx) in section.items" 
@@ -68,6 +72,14 @@ const handleNavClick = (componentName) => {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .navPart__title{
+    width: 100%;
+    padding-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
   
   .navButton {
@@ -76,16 +88,16 @@ const handleNavClick = (componentName) => {
     width: 100%;
     padding: 10px; /* Increased padding for better visual consistency */
     margin-bottom: 5px;
-    border-radius: 10px;
-    background-color: #F2F2F2;
+    border-radius: 20px;
+    /* background-color: #F2F2F2; */
     border: 1px solid transparent; /* Set a transparent border to keep size consistent */
     transition: background-color 0.3s, box-shadow 0.3s;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
 
   .navButton:hover {
-    background-color: white;
-    border: 1px solid var(--vt-nawe-outline);
+    background-color: var(--vt-nawe-outline);
+    /* border: 1px solid var(--vt-nawe-outline); */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   }
   

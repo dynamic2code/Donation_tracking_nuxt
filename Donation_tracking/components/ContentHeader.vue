@@ -1,7 +1,7 @@
 <template>
     <div class="for_all">
         <div class="header">
-            <span class="largeText" >Component</span>
+            <span class="lText" >Nawe Health</span>
         </div>
         <div class="interaction">
             <UInput
@@ -27,10 +27,13 @@
             </div>
         </div>
     </div>
+
     <hr class="line">
+
     <div class="hey">
         <div class="name">
-            <span class="lText">Hey stranger</span>
+            <span class="lText">Hey there</span>                
+            <img src="@/assets/images/wave.png" alt="">
         </div>
         <div>
             <UPopover :popper="{ placement: 'bottom-start' }">
@@ -76,14 +79,11 @@ const date = ref(new Date())
     justify-content: center;
     margin: 10px;
     border-radius: 10px;
-    border: 1px solid var(--vt-nawe-outline);
+    border: 2px solid var(--vt-nawe-outline);
     padding: 10px;
 }
 
-.line{
-    width: 100%;
-    color: #F2F2F2;
-}
+
 .hey{
     width: 100%;
     display: flex;
@@ -92,5 +92,14 @@ const date = ref(new Date())
     padding-left: 30px;
     padding-right: 30px;
     /* background-color: blueviolet; */
+}
+.name{
+    display: flex;
+}
+.name img{
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 </style>

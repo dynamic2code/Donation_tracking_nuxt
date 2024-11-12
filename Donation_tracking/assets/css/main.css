@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 :root {
     --vt-nawe-white: #FFFFFF;
+    --vt-nawe-light-green: #e2fde8;
+    --vt-nawe-light-brown: #faead6;
+    --vt-nawe-blue-dark: #6A48E9;
+    --vt-nawe-blue-light: #d9f7fa;
     --vt-nawe-black:#000000;
-    --vt-nawe-text:black;
-    --vt-nawe-second: #6D58EA;
-    --vt-nawe-outline:#dbdbdb ;
+    --vt-nawe-text:#2C3651;
+    --vt-nawe-outline: #e2d9ff ;
 }
 :root {
     --color-background: var(--vt-postcard-white);
@@ -25,15 +28,12 @@ body{
     font-size: 2rem;
 }
 
-.normalText{
-    font-size: 1rem;
-}
 
 .largeText{
     font-size: 20px;
 }
 .primary_button{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--vt-nawe-blue-dark);
     color: white;
     width: fit-content;
     margin: 5px;
@@ -47,34 +47,37 @@ body{
     border-radius: 20px;
 }
 .xlText{
-    color: #2C3651;
+    color: var(--vt-nawe-text);
     font-size: 2.5rem;   
     font-weight: bold; 
 }
 .lText{
-    color: #2C3651;
+    color: var(--vt-nawe-text);
     font-size: 1.5rem;   
     font-weight: bold; 
 }
 .largeText{
-    color: #2C3651;
+    color: var(--vt-nawe-text) ;
     font-size: 1.2rem;
     font-weight: bold;
 
 }
 .normalText{
-    color: #8D8D8D;
+    color: var(--vt-nawe-text) ;
     font-size: 1rem;
+    font-weight:lighter;
 }
 .mainText{
-    color: #000000;
-    font-size: 1rem;
+    color: var(--vt-nawe-text);
+    font-size: 1.1rem;
+    font-weight: bold;
+
 }
 .buttonText{
 
 }
 .smallText{
-    color: #8D8D8D;
+    color: var(--vt-nawe-black) ;
     font-size: 0.8rem;
 }
 .container{
@@ -83,7 +86,7 @@ body{
 }
 .holder{
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #ffffff;
     min-height: 100vh;
     padding: 10px;    
     display: flex;
@@ -102,6 +105,7 @@ body{
     width: 85%;
     background-color: white ;
     border-radius: 10px;
+    border: 2px solid var(--vt-nawe-outline);    
     min-height: 900px;
     height: 100%;
 }
@@ -172,9 +176,16 @@ button[type="submit"] {
     /* display: block; */
     width: 100%;
     padding: 10px;
-    background-color: var(--vt-nawe-black);
-    color: var(--vt-nawe-white);
+    background-color: var(--vt-nawe-outline);
+    color: var(--vt-nawe-text);
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    border: none;
+    border-top: 2px solid var(--vt-nawe-outline);
+    height: 0;
 }

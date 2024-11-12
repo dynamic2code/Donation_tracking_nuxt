@@ -110,7 +110,7 @@ const submitForm = async() =>{
     top: 0;
     z-index: 4;
     left: 0;
-    /* background-color: aquamarine; */
+    background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
 }
@@ -119,6 +119,7 @@ const submitForm = async() =>{
     height: auto;
     padding: 2%;
     border: 2px solid var(--vt-nawe-outline);
+    background-color: var(--vt-nawe-white);
     border-radius: 20px;
     z-index: 5;
     display: flex;
