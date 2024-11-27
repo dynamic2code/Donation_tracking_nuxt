@@ -8,31 +8,31 @@
                 <form @submit.prevent="submitForm">
                     <div class="form-group">
                         <div class="item">
-                            <label for="hospital" class="normalText">Hospital</label>
-                            <input type="text" id="hospital" v-model="hospital" placeholder="Your Hospital" required />                            
+                            <label for="hospital" class="normalText">Hospital Name</label>
+                            <input type="text" id="name" v-model="name" placeholder="Your Hospital Name" required />                            
                         </div>
 
                         <div class="item">
-                            <label for="doctor" class="normalText">Doctor</label>
-                            <input type="text" id="doctor" v-model="doctor" placeholder="The Staff in charge of the procedure" required />                            
+                            <label for="doctor" class="normalText">Address</label>
+                            <input type="text" id="address" v-model="address" placeholder="The Address" required />                            
                         </div>
 
-                        <!-- <div class="item">
-                            <label for="donor" class="normalText">Donor</label>
-                            <input type="text" id="donor" v-model="donor" placeholder="The donor" required />                            
-                        </div> -->
+                        <div class="item">
+                            <label for="donor" class="normalText">Town</label>
+                            <input type="text" id="town" v-model="town" placeholder="The nearest town" required />                            
+                        </div>
 
                     </div>
 
                     <div class="form-group">
                         <div class="item">
-                            <label for="appointment_date" class="normalText">Appointment Date</label>
-                            <input type="datetime-local" id="appointment_date" v-model="appointment_date" placeholder="Appointment Date" required />                            
+                            <label for="appointment_date" class="normalText">Email</label>
+                            <input type="email" id="email" v-model="email" placeholder="Your email" required />                            
                         </div>
 
                         <div class="item">
-                            <label for="reason" class="normalText">Reason</label>
-                            <input type="text" id="reason" v-model="reason" placeholder="Blood donation" required />                            
+                            <label for="reason" class="normalText">Phone Number</label>
+                            <input type="text" id="phone_number" v-model="phone_number" placeholder="The phone number contact (+254...)" required />                            
                         </div>                        
                     </div>
 
@@ -46,18 +46,12 @@
 <script setup>
 import { ref } from 'vue';
 
-const props = defineProps({
-  donationForm: {
-    type: Object,
-    required: false
-  }
-});
+const name = ref('');
+const address = ref('');
+const town = ref('');
+const phone_number = ref('');
+const email = ref('');
 
-const hospital = ref(1);
-const doctor = ref(1);
-const appointment_date = ref('');
-const reason = ref('Blood donation');
-const status = ref('pending');
 
 const config = useRuntimeConfig();
 const toast = useToast()
@@ -71,25 +65,24 @@ const close = () => {
 
 const submitForm = async() =>{
     try {
-        const response = await fetch('http://127.0.0.1:8000/api/v1/appointment/', {
+        const response = await fetch('http://127.0.0.1:8000/api/v1/hospital/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            hospital: hospital.value,
-            doctor: doctor.value,
-            appointment_date: appointment_date.value,
-            reason: reason.value,
-            donor: props.donationForm.donor,
-            status: status.value
+            name: name.value,
+            address: address.value,
+            town: town.value,
+            phone_number: phone_number.value,
+            email: email.value
           }),
         });
 
         if (response.ok) {
           toast.add({
-            title: 'Appointment created successfully!',
-            description: 'Your appointment has been created successfully!',
+            title: 'Hospital created successfully!',
+            description: 'Your Hospital has been created successfully!',
           })
           close();
         } else {
@@ -97,14 +90,14 @@ const submitForm = async() =>{
           console.error('Error:', errorData);
           toast.add({
             title: 'Error creating appointment',
-            description: 'Failed to create appointment. Please try again.',
+            description: 'Failed to create the hospital account. Please try again.',
           })
         }
     } catch (error) {
         console.error('Error:', error);
         toast.add({
             title: 'Error creating appointment',
-            description: 'Failed to create appointment. Please try again.',
+            description: 'Failed to create the hospital account . Please try again.',
         })
     }
 }

@@ -55,7 +55,7 @@
             </button>
         </div>
 
-        <DoctorSetAppointment v-if="showSetAppointment"></DoctorSetAppointment>    
+        <DoctorSetAppointment v-if="showSetAppointment" :donation-form="item" ></DoctorSetAppointment>    
         <DoctorCancelRequest v-if="showCancelRequest"></DoctorCancelRequest>  
     </div>
 
@@ -96,21 +96,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.full{
-    width: 49%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    /* background-color: brown; */
-    margin-bottom: 10px;
-    /* border: 2px solid var(--vt-nawe-outline); */
-    /* background-color: var(--vt-nawe-light-green); */
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
 .bottom{
     z-index: 1;
     display: flex;

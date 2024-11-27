@@ -8,6 +8,13 @@
                 <form @submit.prevent="submitForm">
                     <div class="form-group">
                         <div class="item">
+                            <label for="name" class="normalText">Task Name</label>
+                            <input type="text" id="name" v-model="name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="item">
                             <label for="hospital" class="normalText">Hospital</label>
                             <input type="text" id="hospital" v-model="hospital" placeholder="Your Hospital" required />                            
                         </div>
@@ -47,9 +54,9 @@
 import { ref } from 'vue';
 
 const props = defineProps({
-  donationForm: {
-    type: Object,
-    required: false
+  user: {
+    type: String,
+    required: true
   }
 });
 

@@ -7,6 +7,8 @@
             <ContentHeader></ContentHeader>
             <component :is="currentComponent" />
         </div>
+
+        <DoctorRegisterDoctor></DoctorRegisterDoctor>
             
     </div>
 </template>
@@ -18,8 +20,9 @@ import { defineAsyncComponent } from 'vue';
 // Hardcoded components
 const components = {
   Dashboard: defineAsyncComponent(() => import('@/components/doctor/Dashboard.vue')),
-//   Tasks: defineAsyncComponent(() => import('@/components/doctor/Tasks.vue')),
-//   Calendar: defineAsyncComponent(() => import('@/components/doctor/Calendar.vue')),
+  Tasks: defineAsyncComponent(() => import('@/components/doctor/Tasks.vue')),
+  Appointments: defineAsyncComponent(() => import('@/components/doctor/Appointment.vue')),
+  Calendar: defineAsyncComponent(() => import('@/components/doctor/Calendar.vue')),
 //   Settings: defineAsyncComponent(() => import('@/components/doctor/Settings.vue')),
 //   Help: defineAsyncComponent(() => import('@/components/doctor/Help.vue')),
   BloodDonations: defineAsyncComponent(() => import('@/components/doctor/BloodDonations.vue')),
@@ -62,6 +65,7 @@ const verticalNav = {
       items: [
         { name: "Dashboard", icon: "i-tabler-dashboard", component: "Dashboard" },
         { name: "Tasks", icon: "i-tabler-layout-dashboard", component: "Tasks" },
+        { name: "Appointments", icon: "i-tabler-calendar", component: "Appointments"},
         { name: "Calendar", icon: "i-tabler-calendar", component: "Calendar" },
         { name: "Settings", icon: "i-tabler-settings", component: "Settings" },
         { name: "Help & Center", icon: "i-tabler-help", component: "Help" },

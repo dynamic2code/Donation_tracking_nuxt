@@ -77,7 +77,7 @@ body{
 
 }
 .smallText{
-    color: var(--vt-nawe-black) ;
+    color: var(--vt-nawe-text) ;
     font-size: 0.8rem;
 }
 .container{
@@ -188,4 +188,20 @@ button[type="submit"] {
     border: none;
     border-top: 2px solid var(--vt-nawe-outline);
     height: 0;
+}
+
+.full{
+    width: 49%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    margin-bottom: 10px;
+    /* border: 2px solid var(--vt-nawe-outline); */
+    /* background-color: var(--vt-nawe-light-green); */
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

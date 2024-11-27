@@ -7,6 +7,7 @@
             <ContentHeader></ContentHeader>
             
         </div>
+        <ManagementRegisterHospital></ManagementRegisterHospital>
             
     </div>
 </template>
